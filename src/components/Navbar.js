@@ -1,7 +1,20 @@
 import styled from "styled-components";
+import logo from "../assets/logo.svg";
+import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  return <h4>Navbar</h4>;
+  return (
+    <NavContainer>
+      <div className="nav-center">
+        <div className="nav-header">
+          <Link to="/">
+            <img src={logo} alt="comfy store" />
+          </Link>
+        </div>
+      </div>
+    </NavContainer>
+  );
 }
 
 const NavContainer = styled.nav`
@@ -69,6 +82,6 @@ const NavContainer = styled.nav`
       display: grid;
     }
   }
-`
+`;
 
 export default Navbar;
