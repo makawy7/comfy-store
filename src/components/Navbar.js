@@ -2,8 +2,11 @@ import styled from "styled-components";
 import logo from "../assets/logo.svg";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { links } from "../utils/constants";
 
 function Navbar() {
+  const openMenu = () => {};
+
   return (
     <NavContainer>
       <div className="nav-center">
@@ -11,6 +14,16 @@ function Navbar() {
           <Link to="/">
             <img src={logo} alt="comfy store" />
           </Link>
+          <button onClick={openMenu} type="button" className="nav-toggle">
+            <FaBars />
+          </button>
+          <ul className="nav-links">
+            {links.map((link) => (
+              <li key={link.id}>
+                <Link to={link.url}>{link.text}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </NavContainer>
