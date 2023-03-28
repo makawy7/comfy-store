@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { links } from "../utils/constants";
+import CartButtons from "./CartButtons";
 
 function Navbar() {
   const openMenu = () => {};
@@ -17,14 +18,15 @@ function Navbar() {
           <button onClick={openMenu} type="button" className="nav-toggle">
             <FaBars />
           </button>
-          <ul className="nav-links">
+        </div>
+        <ul className="nav-links">
             {links.map((link) => (
               <li key={link.id}>
                 <Link to={link.url}>{link.text}</Link>
               </li>
             ))}
           </ul>
-        </div>
+        <CartButtons />
       </div>
     </NavContainer>
   );
