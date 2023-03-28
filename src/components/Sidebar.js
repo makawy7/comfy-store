@@ -24,11 +24,11 @@ function Sidebar() {
         <ul className="links">
           {links.map(({ id, text, url }) => (
             <li key={id}>
-              <Link to={url}>{text}</Link>
+              <Link onClick={closeSidebar} to={url}>{text}</Link>
             </li>
           ))}
           <li>
-            <Link to="/checkout">checkout</Link>
+            <Link onClick={closeSidebar} to="/checkout">checkout</Link>
           </li>
         </ul>
         <CartButtons />
