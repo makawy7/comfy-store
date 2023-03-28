@@ -2,12 +2,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Home, About, Cart, Products, SingleProduct } from "./pages";
 import { Navbar, Footer } from "./components";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <main>
       <BrowserRouter>
         <Navbar />
+        <Sidebar />
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
