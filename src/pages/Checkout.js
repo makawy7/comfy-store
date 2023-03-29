@@ -1,7 +1,15 @@
 import styled from "styled-components";
+import { PageHero } from "../components";
 
 function Checkout() {
-  return <h1>Checkout</h1>;
+  return (
+    <main>
+      <PageHero title="Checkout" />
+      <Wrapper className="page">
+        <h1>checkout here</h1>
+      </Wrapper>
+    </main>
+  );
 }
-const Wrapper = styled.div``
+const Wrapper = styled.div``;
 export default Checkout;
