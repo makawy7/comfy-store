@@ -1,5 +1,9 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import PageHero from "./PageHero";
+import FeaturedProducts from "./FeaturedProducts";
+import Contact from "./Contact";
+import Services from "./Services";
+import Hero from "./Hero";
 
-export { Footer, Navbar, PageHero };
+export { Footer, Navbar, PageHero, FeaturedProducts, Contact, Services, Hero };

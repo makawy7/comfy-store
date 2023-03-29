@@ -1,7 +1,15 @@
 import styled from "styled-components";
+import { Hero, Services, Contact, FeaturedProducts } from "../components";
 
 function Home() {
-  return <h1>Home</h1>;
+  return (
+    <main>
+      <Hero />
+      <FeaturedProducts />
+      <Services />
+      <Contact />
+    </main>
+  );
 }
 
 export default Home;
