@@ -2,6 +2,7 @@ import { useProductContext } from "../context/products_context";
 import { Loading, Error, Product } from "../components";
 import styled from "styled-components";
 
+
 function FeaturedProducts() {
   const { isProductsLoading, productsError, featuredProducts } =
     useProductContext();
