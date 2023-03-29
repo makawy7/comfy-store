@@ -1,5 +1,5 @@
 import { useProductContext } from "../context/products_context";
-import { Loading, Error } from "../components";
+import { Loading, Error, Product } from "../components";
 import styled from "styled-components";
 
 function FeaturedProducts() {
@@ -12,7 +12,23 @@ function FeaturedProducts() {
   if (productsError) {
     return <Error />;
   }
-  return <h1>FeaturedProducts</h1>;
+  return (
+    <Wrapper>
+      <div className="section">
+        <div className="title">
+          <h2>featured products</h2>
+          <div className="underline"></div>
+        </div>
+        <div className="section-center featured">
+          {featuredProducts.slice(0, 3).map((product) => (
+            <Product key={product.id} {...product}>
+              featured products
+            </Product>
+          ))}
+        </div>
+      </div>
+    </Wrapper>
+  );
 }
 
 const Wrapper = styled.section`

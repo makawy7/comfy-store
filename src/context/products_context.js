@@ -38,9 +38,9 @@ export function ProductProvider({ children }) {
     }
   };
 
-  // useEffect(() => {
-  //   fetchProducts(url);
-  // }, []);
+  useEffect(() => {
+    fetchProducts(url);
+  }, []);
 
   return (
     <ProductContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
