@@ -7,12 +7,12 @@ import CartButtons from "./CartButtons";
 import { useProductContext } from "../context/products_context";
 
 function Sidebar() {
-  const { state, closeSidebar } = useProductContext();
+  const { isSidebarOpen, closeSidebar } = useProductContext();
   return (
     <SidebarContainer>
       <aside
         className={`${
-          state.isSidebarOpen ? "sidebar show-sidebar" : "sidebar"
+          isSidebarOpen ? "sidebar show-sidebar" : "sidebar"
         }`}
       >
         <div className="sidebar-header">

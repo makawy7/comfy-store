@@ -14,7 +14,7 @@ export function ProductProvider({ children }) {
     dispatch({ type: SIDEBAR_CLOSE });
   };
   return (
-    <ProductContext.Provider value={{ state, openSidebar, closeSidebar }}>
+    <ProductContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
       {children}
     </ProductContext.Provider>
   );

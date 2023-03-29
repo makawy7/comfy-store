@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Home, About, Cart, Products, SingleProduct } from "./pages";
+import { Home, About, Error, Cart, Products, SingleProduct } from "./pages";
 import { Navbar, Footer } from "./components";
 import Sidebar from "./components/Sidebar";
 
@@ -19,6 +19,7 @@ function App() {
               <Route index element={<Products />} />
               <Route path=":productId" element={<SingleProduct />} />
             </Route>
+            <Route path="/*" element={<Error />} />
           </Route>
         </Routes>
         <Footer />

@@ -1,7 +1,18 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Error() {
-  return <h1>Error</h1>;
+  return (
+    <Wrapper className="page-100">
+      <section>
+        <h1>404</h1>
+        <h3>sorry, the page you tried cannot be found</h3>
+        <Link to="/" className="btn">
+          back home
+        </Link>
+      </section>
+    </Wrapper>
+  );
 }
 const Wrapper = styled.main`
   background: var(--clr-primary-10);
