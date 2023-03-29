@@ -5,5 +5,7 @@ import FeaturedProducts from "./FeaturedProducts";
 import Contact from "./Contact";
 import Services from "./Services";
 import Hero from "./Hero";
+import Loading from "./Loading";
+import Error from "./Error";
 
-export { Footer, Navbar, PageHero, FeaturedProducts, Contact, Services, Hero };
+export { Footer, Navbar, PageHero, FeaturedProducts, Contact, Services, Hero, Loading, Error };
