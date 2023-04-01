@@ -8,6 +8,8 @@ import Hero from "./Hero";
 import Loading from "./Loading";
 import Error from "./Error";
 import Product from "./Product";
+import ProductImages from "./ProductImages";
+import AddToCart from "./AddToCart";
 
 export {
   Footer,
@@ -20,4 +22,6 @@ export {
   Loading,
   Error,
   Product,
+  ProductImages,
+  AddToCart,
 };
